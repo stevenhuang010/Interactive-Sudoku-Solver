@@ -32,10 +32,13 @@ This is a graphical user interface where users can play the famous game of Sudok
   <img src = "https://user-images.githubusercontent.com/63945057/88468203-f9d21d80-ce94-11ea-9661-46228bd20f0a.gif" width = 259 height = 300>
 </p>  
 
+- The Solve with Backtracking Button can be selected so that the program will automatically solve the board for the user using a Sudoku solving backtracking algorithm. Users are able to see how the algorithm works and backtracks as it is being animated.
 
 <p align = "center">
   <img src = "https://user-images.githubusercontent.com/63945057/88468310-5eda4300-ce96-11ea-8ce8-4e3d59d4727c.gif" width = 259 height = 300>
 </p>  
+
+- The Finish Animation Button can be selected so that the backtracking animation from the Solve with Backtracking Button ends instantly and the board is immediately solved. This button is intended to be used when the backtracking animation takes a long amount of time due to the Sudoku board's difficulty.
 
 <p align = "center">
   <img src = "https://user-images.githubusercontent.com/63945057/88468319-8c26f100-ce96-11ea-8bf0-5885e15ec023.gif" width = 259 height = 300>
