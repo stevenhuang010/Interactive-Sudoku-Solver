@@ -4,5 +4,5 @@ This is a graphical user interface where users can play the famous game of Sudok
 ## Basic Controls on the User Interface
 
 <p align = "center">
-  <img src = "https://user-images.githubusercontent.com/63945057/88468122-f25e4480-ce93-11ea-92e3-b90654477014.gif" width = 100 height = 100>
+  <img src = "https://user-images.githubusercontent.com/63945057/88468122-f25e4480-ce93-11ea-92e3-b90654477014.gif" width = 410 height = 475>
 </p>  
