@@ -1,1 +1,1 @@
-# Sudoku-GUI
+# Play-Sudoku-Solver
