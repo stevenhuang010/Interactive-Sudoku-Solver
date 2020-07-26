@@ -35,7 +35,7 @@ This is a graphical user interface where users can play Sudoku. Additionally, us
 - The Solve with Backtracking button can be selected so that the program will automatically solve the board for the user using a Sudoku solving backtracking algorithm. Users are able to see how the algorithm works and backtracks as it is being animated.
 
 <p align = "center">
-  <img src = "https://user-images.githubusercontent.com/63945057/88468310-5eda4300-ce96-11ea-8ce8-4e3d59d4727c.gif" width = 259 height = 300>
+  <img src = "https://user-images.githubusercontent.com/63945057/88468872-5e45aa80-ce9e-11ea-8504-10c047c03d20.gif" width = 259 height = 300>
 </p>  
 
 - The Finish Animation button can be selected so that the backtracking animation from the Solve with Backtracking button ends instantly and the board is immediately solved. This button is intended to be used when the backtracking animation takes a long amount of time because a Sudoku puzzle is particularly difficult for the backtracking algorithm to solve.
