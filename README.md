@@ -1,13 +1,13 @@
 # Play-Sudoku-Solver
-This is a graphical user interface where users can play Sudoku. Additionally, users have to ability to make the program solve the board for them using a Sudoku solving backtracking algorithm; this algorithm is shown step-by-step so users can understand and picture how it works.
+This is a graphical user interface where users can play Sudoku. Additionally, users have to ability to make the program automatically solve the board using a Sudoku solving backtracking algorithm; this algorithm is shown step-by-step so users can understand and picture how it works.
 
 ## Basic Controls on the User Interface
 
-- When the user clicks on a cell, it becomes a teal color and is now the focused cell where numbers can go.
+- When the user clicks on a cell, it becomes a teal color and is now the focused cell where numbers can be placed.
 
-- The cells with a light gray background are the clues given in the original board and cannot be altered.
+- The cells with a light gray background are the clues given in the original board that cannot be altered.
 
-- Numbers are added to the focused cell using the keyboard, and if the added number is a duplicate in a row, column, or matrix, the numbers in the row, column or matrix will  turn red, respectively. Otherwise, the number remains purple.
+- Numbers are added to the focused cell using the keyboard. If the added number is a duplicate in a row, column, or matrix, the numbers in the row, column or matrix, respectively, will turn red. Otherwise, the numbers remain purple.
 
 - In this example, adding 2 in the 2nd row and 1st column breaks the row, column, and matrix, so the numbers in the row, column, and matrix all turned red.
 
