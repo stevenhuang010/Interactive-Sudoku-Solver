@@ -27,7 +27,7 @@ class Controller:
         pygame.display.set_caption("Sudoku")
 
         #start time for clock
-        self.start_time = 0 
+        self.start_time = 0
 
         #font used for numbers in the grid, the clock, and the finished screen
         self.grid_font = pygame.font.SysFont('segoescript', 33)
