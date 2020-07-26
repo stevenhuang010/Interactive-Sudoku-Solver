@@ -734,5 +734,8 @@ class Controller:
                     return False
         return True
 
-if __name__ == "__main__":
+def main():
     driver = Controller()
+
+if __name__ == "__main__":
+    main()
