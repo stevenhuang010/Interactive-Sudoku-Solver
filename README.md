@@ -1,4 +1,4 @@
-# Sudoku-Solving-GUI
+# Sudoku-Solving-Graphical-User-Interface
 This is a graphical user interface where users can play Sudoku. Additionally, users have to ability to make the program automatically solve the board using a Sudoku solving backtracking algorithm; this algorithm is shown step-by-step so that users can understand and picture how it works.
 
 ## Basic Controls on the User Interface
