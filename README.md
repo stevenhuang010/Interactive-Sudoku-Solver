@@ -1,5 +1,5 @@
 # Sudoku-Solving-GUI
-This is a graphical user interface where users can play Sudoku. Additionally, users have to ability to make the program automatically solve the board using a Sudoku solving backtracking algorithm; this algorithm is shown step-by-step so users can understand and picture how it works.
+This is a graphical user interface where users can play Sudoku. Additionally, users have to ability to make the program automatically solve the board using a Sudoku solving backtracking algorithm; this algorithm is shown step-by-step so that users can understand and picture how it works.
 
 ## Basic Controls on the User Interface
 
@@ -32,13 +32,13 @@ This is a graphical user interface where users can play Sudoku. Additionally, us
   <img src = "https://user-images.githubusercontent.com/63945057/88468203-f9d21d80-ce94-11ea-9661-46228bd20f0a.gif" width = 259 height = 300>
 </p>  
 
-- The Solve with Backtracking button can be selected so that the program will automatically solve the board for the user using a Sudoku solving backtracking algorithm. Users are able to see how the algorithm works and backtracks as it is being animated.
+- The Solve with Backtracking Animation button can be selected so that the program will automatically solve the board for the user using a Sudoku solving backtracking algorithm. Users are able to see how the algorithm works and backtracks as it is being animated.
 
 <p align = "center">
   <img src = "https://user-images.githubusercontent.com/63945057/88468872-5e45aa80-ce9e-11ea-8504-10c047c03d20.gif" width = 259 height = 300>
 </p>  
 
-- The Finish Animation button can be selected so that the backtracking animation from the Solve with Backtracking button ends instantly and the board is immediately solved. This button is intended to be used when the backtracking animation takes a long amount of time because a Sudoku puzzle is particularly difficult for the backtracking algorithm to solve.
+- The Finish Animation button can be selected so that the backtracking animation from the Solve with Backtracking Animation button ends instantly and the board is immediately solved. This button is intended to be used when the backtracking animation takes a long amount of time because a Sudoku puzzle is particularly difficult for the backtracking algorithm to solve.
 
 <p align = "center">
   <img src = "https://user-images.githubusercontent.com/63945057/88468319-8c26f100-ce96-11ea-8bf0-5885e15ec023.gif" width = 259 height = 300>
