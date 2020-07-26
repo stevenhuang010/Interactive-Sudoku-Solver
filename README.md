@@ -18,7 +18,7 @@ This is a graphical user interface where users can play Sudoku. Additionally, us
 </p>  
 
 
-- The Show Solution button shows the solution to the sudoku puzzle.
+- The Show Solution button shows the solution to the sudoku puzzle without the backtracking animation being included.
 
 <p align = "center">
   <img src = "https://user-images.githubusercontent.com/63945057/88468190-b5468200-ce94-11ea-83ad-67d557e88bd7.gif" width = 259 height = 300>
