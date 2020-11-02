@@ -2,7 +2,7 @@ import math
 import time
 import pygame
 import Constants
-from Button import Button 
+from Button import Button
 
 class Backtracking:
     def __init__(self, controller, board, boolean_board, animate):
@@ -109,7 +109,7 @@ class Backtracking:
                                                                  Constants.FINISH_ANIMATION_BUTTON_WIDTH, Constants.FINISH_ANIMATION_BUTTON_HEIGHT, 'Finish Animation',
                                                                  Constants.BLACK, Constants.MENU_FONT_SIZE)
         #redraw the screen
-        self.controller.redraw_screen(row, col, Constants.PURPLE)
+        self.controller.redraw_screen(row, col, Constants.BLUE)
         pygame.display.update()
         #delay 25 ms
         pygame.time.wait(25)
@@ -123,7 +123,7 @@ class Backtracking:
                 pygame.quit()
                 raise SystemExit
         #redraw the screen with the additional number filled in
-        self.controller.redraw_screen(row, col, Constants.PURPLE)
+        self.controller.redraw_screen(row, col, Constants.BLUE)
         pygame.display.update()
         #delay 30 ms
         pygame.time.wait(30)

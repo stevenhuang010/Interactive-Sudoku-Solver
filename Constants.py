@@ -1,11 +1,10 @@
 #colors
 BLACK = (0,0,0)
 WHITE = (255, 255, 255)
-BLUE = (120, 193, 245)
-PURPLE = (186, 85, 201)
-GREEN = (133, 222, 185)
-RED = (245, 71, 71)
-GRAY = (209, 204, 199)
+BLUE = (108, 127, 171)
+BEIGE = (255, 216, 166)
+RED = (242, 121, 121)
+GRAY = (224, 217, 209)
 #rect width and height in the grid
 RECT_WIDTH = 40
 RECT_HEIGHT = 40

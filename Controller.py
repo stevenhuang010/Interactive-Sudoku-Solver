@@ -89,7 +89,7 @@ class Controller:
         #draws the time in the bottom right corner
         self.draw_time_label()
         #draws the screen
-        self.redraw_screen(-1, -1, Constants.PURPLE)
+        self.redraw_screen(-1, -1, Constants.BLUE)
 
         pygame.display.update()
 
@@ -112,7 +112,7 @@ class Controller:
                     position = pygame.mouse.get_pos()
                     #user clicked somewhere on the grid
                     if event.type == pygame.MOUSEBUTTONDOWN and self.is_in_bounds(position):
-                        #colors in the focused cell green
+                        #colors in the focused cell BEIGE
                         self.update_grid_focus(position)
                     #if user presses on the new puzzle button
                     elif event.type == pygame.MOUSEBUTTONDOWN and self.new_game_button.is_hovering(position):
@@ -122,7 +122,7 @@ class Controller:
                         self.clear_board()
                         self.reset_in_game_variables()
                         self.scene.fill(Constants.BLUE)
-                        self.redraw_screen(-1, -1, Constants.PURPLE)
+                        self.redraw_screen(-1, -1, Constants.BLUE)
                     #wants to immediately solve the board
                     elif event.type == pygame.MOUSEBUTTONDOWN and self.solve_button.is_hovering(position):
                         self.clear_board()
@@ -219,14 +219,14 @@ class Controller:
                 #animates the setting of the board to the solution for every row, col
                 self.backtracker.animate_solution(row, col)
 
-    #updates cell to green if it is clicked by user
+    #updates cell to BEIGE if it is clicked by user
     def update_grid_focus(self, position):
         curr_col = self.get_col(position[0])
         curr_row = self.get_row(position[1])
         #if the row, col where the user clicked is not part of the given sudoku board
         if self.is_changeable(curr_row, curr_col):
-            #highlights the cell as purple
-            self.redraw_screen(curr_row, curr_col, Constants.PURPLE)
+            #highlights the cell as BLUE
+            self.redraw_screen(curr_row, curr_col, Constants.BLUE)
             #updates curr_cell, which stores focused_cell
             self.curr_cell[0] = curr_row
             self.curr_cell[1] = curr_col
@@ -269,7 +269,7 @@ class Controller:
         self.curr_time_seconds = (pygame.time.get_ticks() - self.start_time) // 1000
         if self.curr_time_seconds >= self.prev_time_seconds and not self.is_finished_screen_showing:
             #redraws the screen
-            self.redraw_screen(self.curr_cell[0], self.curr_cell[1], Constants.PURPLE)
+            self.redraw_screen(self.curr_cell[0], self.curr_cell[1], Constants.BLUE)
             self.prev_time_seconds = self.curr_time_seconds
             pygame.display.update()
 
@@ -378,7 +378,7 @@ class Controller:
                                               Constants.BLACK, Constants.MENU_FONT_SIZE)
 
         self.scene.fill(Constants.BLUE)
-        self.redraw_screen(-1, -1, Constants.PURPLE)
+        self.redraw_screen(-1, -1, Constants.BLUE)
 
 
         #time
@@ -389,7 +389,7 @@ class Controller:
     #writes text after finish puzzle
     def write_finish_screen_text(self):
         text_width, text_height = self.grid_font.size("Sudoku Solved!")
-        finished_label = self.grid_font.render("Sudoku Solved!", True, Constants.PURPLE)
+        finished_label = self.grid_font.render("Sudoku Solved!", True, Constants.BLUE)
         self.scene.blit(finished_label, (Constants.WINDOW_WIDTH // 2 - text_width // 2,
                                          Constants.WINDOW_HEIGHT // 2 - text_height // 2 -
                                          Constants.FINISHED_BUTTON_HEIGHT - Constants.FINISHED_MENU_SPACING))
@@ -419,7 +419,7 @@ class Controller:
         #fades from 0 to 219 alpha
         for a in range(220):
             fading_surface.set_alpha(a)
-            self.redraw_screen(-1, -1, Constants.PURPLE)
+            self.redraw_screen(-1, -1, Constants.BLUE)
             self.scene.blit(fading_surface, (0, 0))
             pygame.display.update()
             #add delay so it smoothens transition
@@ -556,17 +556,17 @@ class Controller:
                     self.note_numbers[focused_row][focused_col] = []
                     self.board[focused_row][focused_col] = 0
 
-            self.redraw_screen(focused_row, focused_col, Constants.PURPLE)
+            self.redraw_screen(focused_row, focused_col, Constants.BLUE)
             pygame.display.update()
 
-    #selected_row and selected_col is made green
+    #selected_row and selected_col is made BEIGE
     def draw_grid(self, selected_row, selected_col):
         #draws 9 boxes in each matrix with Constants.INNER_MATRIX_BORDER_WIDTH
         for row in range(Constants.NUM_ROWS):
             for col in range(Constants.NUM_COLS):
                 square_color = Constants.WHITE
                 if row == selected_row and col == selected_col:
-                    square_color = Constants.GREEN
+                    square_color = Constants.BEIGE
                 #gray background if came with original grid
                 elif self.boolean_board[row][col]:
                     square_color = Constants.GRAY
