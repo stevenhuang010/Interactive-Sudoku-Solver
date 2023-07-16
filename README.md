@@ -1,5 +1,5 @@
 # Interactive-Sudoku-Solver
-This is a graphical user interface where users can play Sudoku. Additionally, users have to ability to make the program automatically solve the board using a Sudoku solving backtracking algorithm; this algorithm is shown step-by-step so that users can understand and picture how it works. The front-end was built using the Pygame module, while the back-end was built using Python.
+This is a graphical user interface where users can play Sudoku. Additionally, users have to ability to make the program automatically solve the board using a Sudoku solving backtracking algorithm; this algorithm is shown step-by-step so that users can understand and picture how it works. This was built with Python and the Pygame module. To run it, run python3 Controller.py.
 
 ## Basic Controls on the User Interface
 
